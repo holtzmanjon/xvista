@@ -147,7 +147,7 @@ if $TEST -f /vmlinux -o -f /zImage -o -f /vmlinuz -o -f /boot/vmlinuz -o `uname`
       FFLAGS="-extend_source -O3"
     elif [ a`which f95` != "a" ] ; then
 #    if $TEST -x `which f77 | awk '{print $1}' `; then
-      FFLAGS="-O -ffixed-line-length-132 "
+      FFLAGS="-O -ffixed-line-length-132 -std=legacy"
       FC=f95
       LD=f95
     elif $TEST -x `which f77 | awk '{print $1}' `; then
