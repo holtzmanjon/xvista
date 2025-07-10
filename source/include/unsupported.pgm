@@ -1,6 +1,0 @@
-        ELSE IF (COM .EQ. 'FLAT') THEN
-             NEEDIM = 1
-             IF (GO) CALL CCTWOSPLINE(LOCIM,IMER-IMSR+1,IMEC-IMSC+1)
-
-
-
